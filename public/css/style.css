@@ -122,13 +122,23 @@ span.control:hover {
 .App__footer {
   margin-top: 1em;
   border-top: 1px solid #e7e7e7;
-  text-align: center;
-  color: #333;
+  /* text-align: center; */
+  left: 0;
+  color: #00d8ff;
   padding: 6px 0;
+  width: 100%;
 }
 .App__footer a {
   color: inherit;
   text-decoration: underline;
+}
+
+.App__footer a.active {
+    color: #000;
+}
+
+.Footer__link {
+    float:right;
 }
 
 .Items__list {

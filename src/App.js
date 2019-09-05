@@ -68,9 +68,21 @@ var App = React.createClass({
           <div dangerouslySetInnerHTML={{ __html: this.state.prebootHTML }}/>
           {this.state.showChildren ? this.props.children : ''}
         </div>
-        <div className="App__footer">
-          <a href="https://github.com/insin/react-hn">insin/react-hn</a>
-        </div>
+
+            <div className="App__footer">
+
+                <Link to="/news" activeClassName="active" className="App__homelink">React HN</Link>{' '}
+                <Link to="/newest" activeClassName="active" >new</Link>{' | '}
+                <Link to="/newcomments" activeClassName="active">comments</Link> {' | '}
+                <Link to="/show" activeClassName="active">show</Link>{' | '}
+                <Link to="/ask" activeClassName="active">ask</Link>{' | '}
+                <Link to="/jobs" activeClassName="active">jobs</Link>
+
+
+                <a className="Footer__link" href="https://github.com/insin/react-hn">insin/react-hn</a>
+
+            </div>
+
       </div>
     </div>
   }
